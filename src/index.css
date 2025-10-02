@@ -1,0 +1,28 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+html, body {
+  min-height: 100vh;
+}
+
+body {
+  min-width: 320px;
+}
+
