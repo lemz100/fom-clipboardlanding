@@ -1,3 +1,369 @@
+@font-face {
+    font-family: Bai Jamjuree SemiBold;
+    src: url(./assets/fonts/BaiJamjuree-SemiBold.ttf);
+}
+@font-face {
+    font-family: Bai Jamjuree Regular;
+    src: url(./assets/fonts/BaiJamjuree-Regular.ttf);
+}
+
+:root {
+    --gray950: #2A2A2A;
+    --gray700: #4C545C;
+    --gray500: #9EABB2;
+    --gray50: #F5F7F7;
+    --green500: #26BBA4;
+    --green300: #5DCCBB;
+    --blue500: #6174FF;
+    --blue400: #8897FF;
+    --grad1: linear-gradient(90deg,rgba(79, 79, 79, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    --grad2: linear-gradient(90deg,rgba(109, 109, 109, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+.tp1 {
+    font-family: Bai Jamjuree SemiBold;
+    font-size: 46px;
+    line-height: 125%;
+    letter-spacing: -0.75px;
+}
+.tp2 {
+    font-family: Bai Jamjuree SemiBold;
+    font-size: 40px;
+    line-height: 125%;
+    letter-spacing: -0.75px;
+}
+.tp3 {
+    font-family: Bai Jamjuree SemiBold;
+    font-size: 36px;
+    line-height: 125%;
+    letter-spacing: -0.6px;
+}
+.tp4 {
+    font-family: Bai Jamjuree SemiBold;
+    font-size: 32px;
+    line-height: 125%;
+    letter-spacing: -0.5px;
+}
+.tp5 {
+    font-family: Bai Jamjuree SemiBold;
+    font-size: 28px;
+    line-height: 125%;
+    letter-spacing: -0.5px;
+}
+.tp6 {
+    font-family: Bai Jamjuree SemiBold;
+    font-size: 24px;
+    line-height: 125%;
+    letter-spacing: -0.4px;
+}
+.tp7sb {
+    font-family: Bai Jamjuree SemiBold;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+}
+.tp7r {
+    font-family: Bai Jamjuree Regular;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.15px;
+}
+.tp8 {
+    font-family: Bai Jamjuree Regular;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.15px;
+}
 #root {
-  
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.bg-img {
+    height: 363px;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+}
+
+.cta, .keep-track, .access-clip, .supercharge, .clip-cont {
+    width: min(90%, 616px);
+    margin-inline: auto;
+}
+
+.cta {
+    margin-top: 7.5rem;
+    margin-bottom: 9.875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4rem;
+}
+.cta .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
+}
+.cta .text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.buttons {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.keep-track {
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+    align-items: center;
+    margin-bottom: 11rem;
+}
+.keep-track .desc-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.heading, .title {
+    color: var(--gray700);
+    text-align: center;
+}
+.desc, .info {
+    color: var(--gray500);
+    text-align: center;
+}
+.keep-track .main-cont {
+    display: contents;
+}
+.keep-track .features-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
+    width: min(100%, 350px);
+}
+.keep-track .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.access-clip {
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+    align-items: center;
+    margin-bottom: 8.125rem;
+}
+.access-clip .text-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.supercharge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5.5rem;
+    margin-bottom: 9rem;
+}
+
+.supercharge .desc-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.supercharge .features-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+.supercharge .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(100%, 350px);
+    gap: 2.5rem;
+}
+.supercharge .feature .desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logos-cont {
+    width: 139px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
+    margin-inline: auto;
+    margin-bottom: 10.75rem;
+}
+.logos-cont .logo-grp {
+    display: contents;
+}
+
+.clip-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
+    margin-bottom: 10.5rem;
+}
+.clip-cont .text-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    /** Width function classes */
+    .cta, .keep-track .desc-cont, .supercharge .desc-cont, .clip-cont {
+        width: clamp(616px, calc(616px + (730 - 616) * ((100vw - 768px) / (1440 - 768))), 730px);
+    }
+    .access-clip {
+        width: clamp(616px, calc(616px + (810 - 616) * ((100vw - 768px) / (1440 - 768))), 810px);
+    }
+    .supercharge {
+        width: clamp(616px, calc(616px + (1114 - 616) * ((100vw - 320px) / (768 - 320))), 1114px);
+    }
+
+    /** Main styling for classes */
+    .cta {
+        margin-top: 8.125rem;
+        gap: 3.5rem;
+    }
+    .cta .content {
+        gap: 2.5rem;
+    }
+    .cta .text-content .heading {
+        font-size: 2.5rem;
+        letter-spacing: -0.75px;
+    }
+    .cta .text-content .desc {
+        font-size: 1.25rem;
+    }
+    .keep-track {
+        gap: 6rem;
+    }
+    .keep-track .desc-cont .heading {
+        font-size: 2.25rem;
+        letter-spacing: -0.6px;
+    }
+    .keep-track .desc-cont .desc {
+        font-size: 1.25rem;
+    }
+    .keep-track .features-cont {
+        gap: 4rem;
+    }
+    .access-clip {
+        gap: 5rem;
+    }
+    .access-clip .heading {
+        font-family: Bai Jamjuree SemiBold;
+        font-size: 36px;
+        line-height: 125%;
+        letter-spacing: -0.6px;
+    }
+    .access-clip .info {
+        font-size: 1.25rem;
+    }
+    
+    .supercharge .desc-cont .heading {
+        font-size: 2.25rem;
+        letter-spacing: -0.6px;
+    }
+    .supercharge .desc-cont .info {
+        font-size: 1.25rem;
+    }
+    .buttons {
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+    }
+    .logos-cont {
+        width: 590px;
+        gap: 3.5rem;
+    }
+    .logos-cont .logo-grp {
+        display: flex;
+        flex-direction: row;
+    }
+    .logo-grp img {
+        align-self: center;
+    }
+    .logo-grp._1 {
+        gap: 5rem;
+    }
+    .logo-grp._2 {
+        align-self: stretch;
+        justify-content: space-around;
+    }
+    .clip-cont {
+        gap: 3rem;
+    }
+    .clip-cont .title {
+        font-size: 2.25rem;
+        letter-spacing: -0.6px;
+        line-height: 125%;
+    }
+    .clip-cont .desc {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cta .text-content .heading {
+        font-family: Bai Jamjuree SemiBold;
+        font-size: 46px;
+        line-height: 125%;
+        letter-spacing: -0.75px;
+    }
+    .keep-track {
+        margin-inline: 0;
+        width: 100%;
+    }
+    .keep-track .main-cont {
+        display: flex;
+        height: 600px;
+        gap: 4.5rem;
+        align-items: center;
+    }
+    .keep-track .main-cont .computer-img {
+        margin-left: -2rem;
+    }
+    .access-clip {
+        gap: 6rem;
+    }
+    .supercharge {
+        gap: 4.5rem;
+    }
+    .supercharge .features-cont {
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .logos-cont {
+        width: auto;
+        display: flex;
+        gap: 6rem;
+        flex-direction: row;
+    }
+    .logos-cont .logo-grp {
+        display: contents;
+    }
 }
