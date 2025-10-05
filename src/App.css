@@ -240,7 +240,7 @@
         width: clamp(616px, calc(616px + (810 - 616) * ((100vw - 768px) / (1440 - 768))), 810px);
     }
     .supercharge {
-        width: clamp(616px, calc(616px + (1114 - 616) * ((100vw - 320px) / (768 - 320))), 1114px);
+        width: clamp(616px, calc(616px + (1114 - 616) * ((100vw - 768px) / (1440 - 768))), 1114px);
     }
 
     /** Main styling for classes */
@@ -328,6 +328,9 @@
 }
 
 @media screen and (min-width: 1440px) {
+    .bg-img {
+        width: 100vw;
+    }
     .cta .text-content .heading {
         font-family: Bai Jamjuree SemiBold;
         font-size: 46px;
